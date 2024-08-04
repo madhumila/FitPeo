@@ -1,0 +1,47 @@
+/* src/components/Navbar.css */
+.navbar {
+    width: calc(100% - 250px);
+    height: 60px;
+    background-color: #1f1f2e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    z-index: 1000;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .search input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .icon {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar {
+      width: 100%;
+      left: 0;
+    }
+  }
+  

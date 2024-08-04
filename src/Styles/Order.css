@@ -1,0 +1,13 @@
+/* src/components/Orders.css */
+.orders-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #33334d;
+  }
+  
