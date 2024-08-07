@@ -1,0 +1,58 @@
+.net-profit-card {
+    display: flex;
+    background-color: #202028;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    border-radius: 5px;
+  }
+  
+  .net-profit-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .net-profit-left h2 {
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  .net-profit-left .profit-value {
+    color: white;
+    font-size: 2em;
+    margin: 5px 0;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .net-profit-left .profit-growth {
+    color: white;
+    font-size: 1em;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .net-profit-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .completion-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  
+  .completion-circle svg text {
+    font-size: 1.2em;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }

@@ -1,21 +1,19 @@
-// src/App.js
-import React from "react";
+import React from 'react';
+import './App.css';
+import Header from './Components/Header';
+import Sidebar from './Components/Sidebar';
+import MainPage from './Components/MainPage';
 
-import "./App.css";
-import Sidebar from "./Components/Sidebar";
-import Navbar from "./Components/Navbar";
-import Dashboard from "./Components/Dashboard";
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Sidebar />
-      <div className="main-content">
-        <Navbar />
-        <Dashboard />
+    <div>
+      <Header />
+      <div className="container">
+        <Sidebar />
+        <MainPage />
       </div>
     </div>
   );
-}
+};
 
 export default App;

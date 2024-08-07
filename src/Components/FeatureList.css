@@ -1,0 +1,48 @@
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    background-color: #141416;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .feature-item .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .feature-item .gun-icon {
+    background-color: #5f3237;
+  }
+  
+  .feature-item .burger-icon {
+    background-color: #293368;
+  }
+  
+  .feature-item .dish-icon {
+    background-color: #214a60;
+  }
+  
+  .feature-item .text {
+    flex: 1;
+  }
+  
+  .feature-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }

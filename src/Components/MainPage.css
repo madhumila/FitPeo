@@ -1,0 +1,126 @@
+.main-page {
+    display: flex;
+    padding: 20px;
+    flex-direction: row !important;
+
+  }
+  
+  .main-content {
+    width: 60%;
+    margin-right: 20px;
+  }
+  
+  .right-side {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: #141416 !important;
+    gap: 20px;
+  }
+  
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    height: 20px;
+  }
+  
+  .secondary-card {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .secondary-card-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .arrow-circle {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+  
+  .customer-reviews {
+    background-color: #202028;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .customer-reviews-container {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .customer-review-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #202028;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .reviewer-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .review-stars {
+    margin-bottom: 10px;
+  }
+  
+  .star {
+    font-size: 18px;
+    color: #ddd;
+  }
+  
+  .star.filled {
+    color: #fddf31;
+  }
+  
+  .review-comment {
+    color: #ccc;
+  }
+  
+  @media (max-width: 952px) {
+    .main-page{
+      flex-direction: column !important;
+    }
+    .right-side, .main-content{
+      width: 95%;
+    }
+  }

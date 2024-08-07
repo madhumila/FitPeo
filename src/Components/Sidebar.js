@@ -1,28 +1,27 @@
-// src/components/Sidebar.js
 import React from 'react';
-import { FiHome, FiTrendingUp, FiBarChart, FiSettings } from 'react-icons/fi';
-import '../Styles/Sidebar.css';
+import { Home, BarChart, Assignment, AccountBalanceWallet, ShoppingCart } from '@mui/icons-material';
+import { List, ListItem, ListItemIcon } from '@mui/material';
 
 const Sidebar = () => {
+  const menuItems = [
+    { icon: <Home />, selected: true },
+    { icon: <BarChart />, selected: false },
+    { icon: <Assignment />, selected: false },
+    { icon: <AccountBalanceWallet />, selected: false },
+    { icon: <ShoppingCart />, selected: false },
+  ];
+
   return (
-    <div className="sidebar">
-      <div className="logo">Dashboard</div>
-      <div className="nav-item">
-        <FiHome className="icon" />
-        Home
-      </div>
-      <div className="nav-item">
-        <FiTrendingUp className="icon" />
-        Trends
-      </div>
-      <div className="nav-item">
-        <FiBarChart className="icon" />
-        Analytics
-      </div>
-      <div className="nav-item">
-        <FiSettings className="icon" />
-        Settings
-      </div>
+    <div className="sidebar" style={{  }}>
+      <List>
+        {menuItems.map((item, index) => (
+          <ListItem button key={index} style={{ color: item.selected ? '#7294ff' : '#a7a7a7' }}>
+            <ListItemIcon style={{ color: item.selected ? '#7294ff' : '#a7a7a7' }}>
+              {item.icon}
+            </ListItemIcon>
+          </ListItem>
+        ))}
+      </List>
     </div>
   );
 };

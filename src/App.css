@@ -1,21 +1,92 @@
-/* src/App.css */
-body {
-  background-color: #121212;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
+.container {
   display: flex;
+  flex-direction: row;
+  min-height: calc(100vh - 64px); /* Adjust based on header height */
 }
 
-.main-content {
-  margin-left: 250px;
-  width: calc(100% - 250px);
+.sidebar {
+  background-color: #202028;
+  padding: 10px;
+  width: 50px; /* Fixed width for the sidebar */
+  flex-shrink: 0; /* Ensure sidebar does not shrink */
+}
+
+.main-page {
+  width: calc(100% - 50px); /* Adjust width to accommodate sidebar */
+  background-color: #141416;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allow main page to grow */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-container > div {
+  flex: 1 1 calc(25% - 20px);
+  margin: 10px;
+  min-width: 280px;
+}
+
+.right-side {
+  background-color: #202028;
+  margin: 10px;
+  flex-grow: 1; /* Allow right-side component to grow */
+}
+
+.notification-dot {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+  .card-container > div {
+    flex: 1 1 calc(50% - 20px);
+  }
 }
 
 @media (max-width: 600px) {
-  .main-content {
-    margin-left: 0;
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
     width: 100%;
+    order: 1;
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    padding: 10px 0;
+    background-color: #202028; /* Maintain background color */
+  }
+  .sidebar .MuiList-root {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .sidebar .MuiListItem-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 0 10px;
+  }
+  .sidebar .MuiListItemIcon-root {
+    min-width: auto;
+    margin: 0;
+  }
+  .main-page {
+    width: 100%;
+  }
+  .right-side {
+    order: 2;
   }
 }
